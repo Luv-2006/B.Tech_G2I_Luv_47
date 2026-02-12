@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c,d,e;
+    float p;
+    printf("Enter the marks of first subject \n");
+    scanf("%d",&a);
+    printf("Enter the marks of second subject \n");
+    scanf("%d",&b);
+    printf("Enter the marks of third subject \n");
+    scanf("%d",&c);
+    printf("Enter the marks of fourth subject \n");
+    scanf("%d",&d);
+    printf("Enter the marks of fifth subject \n");
+    scanf("%d",&e);
+    p=(a+b+c+d+e)/5.0;
+    printf("Percentage Obtained = %d \n",p);
+
+    if(p>90)
+    {
+        printf("A Grade ");
+    }
+    
+     else if(p>80&&p<900){
+     printf("B Grade");
+     }
+     else if(p>60&&p<80)
+    {
+        printf("C Grade  ");
+    }
+    else
+    {
+        printf("D Grade  ");
+    }
+}
