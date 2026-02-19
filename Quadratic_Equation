@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int a,b,c;
+    float d,r1,r2;
+    printf("Enter the values of Quadratic Equation\n");
+    scanf("%d %d %d",&a,&b,&c);
+    printf("Formed Quadratic Equation is\n");
+    printf("%dx^2 + %dx + %d \n",a,b,c);
+    d=pow(b,2)-4.0*a*c;
+    if(d>0)
+    {
+    printf("Roots are distinct and real\n");
+    r1=(-b+sqrt(d))/(2.0*a);
+    r2=(-b-sqrt(d))/(2.0*a);
+    printf("%.2f %.2f",r1,r2);
+    }
+    else if(d==0)
+    {
+        printf("Roots are equal and real\n");
+        r1=(-b)/(2.0*a);
+        printf("%.2f",r1);
+    }
+    else
+    {
+        printf("Roots are imaginary");
+    }
+    
+    return 0;
+    
+}
